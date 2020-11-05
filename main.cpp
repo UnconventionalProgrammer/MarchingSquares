@@ -56,8 +56,6 @@ public:
 class MetaBallsGenerator : public ISquaresGenerator
 {
     size_t mResolutionX, mResolutionY;
-    //Yes, I'm using a tuple instead of a well defined struct...because f-you that's why.
-    //an array of 5 doubles would also work.
     //CenterX CenterY VelocityX, VelocityY Radius
     std::vector<std::tuple<double, double, double, double, double>> mMetaBalls;
 
