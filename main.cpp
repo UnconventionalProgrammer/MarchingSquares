@@ -202,7 +202,7 @@ int main()
     constexpr size_t          PixelsPerPointX = 4; //Resolution of the display, higher numbers means the points a further apart.
     constexpr size_t          PixelsPerPointY = 4;
     constexpr double          DepthIncrementAmountPerFrame = 0.0005; //We are using 3d perlin noise, how fast should we "travel" through the Z axis.
-    constexpr size_t          ThreadCount = 12;  //How many worker threads should we use. Probably better to use std::thread::hardware_concurrency()
+    constexpr size_t          ThreadCount = 6;  //How many worker threads should we use. Probably better to use std::thread::hardware_concurrency()
     const std::vector<double> IsoLevels{0.3,0.4,0.5};   //Threshold for a 1 or 0 on points of the square.
 
     sf::RenderWindow window(sf::VideoMode(PointsX * PixelsPerPointX, PointsY * PixelsPerPointY), "Marching Squares Example");
